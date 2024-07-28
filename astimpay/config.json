@@ -1,0 +1,53 @@
+{
+    "name": "AstimPay Payment Module",
+    "unique_identifier": "astimpay",
+    "version": "1.0",
+    "minimum_item_version": "9.0",
+    "addon_banner": "addons/astimpay_banner.png",
+    "directory": [
+        {
+            "name": [
+                "app/Library"
+            ]
+        }
+    ],
+    "sql_file": "",
+    "files": [
+        {
+            "root_directory": "addons/astimpay/views/astimpay.blade.php",
+            "update_directory": "resources/views/backend/setup_configurations/payment_method/partials/astimpay.blade.php"
+        },
+        {
+            "root_directory": "addons/astimpay/config/astimpay.php",
+            "update_directory": "config/astimpay.php"
+        },
+        {
+            "root_directory": "addons/astimpay/routes/astimpay.php",
+            "update_directory": "routes/astimpay.php"
+        },
+        {
+            "root_directory": "addons/astimpay/routes/RouteServiceProvider.php",
+            "update_directory": "app/Providers/RouteServiceProvider.php"
+        },
+        {
+            "root_directory": "addons/astimpay/library/UddoktaPay.php",
+            "update_directory": "app/Library/UddoktaPay.php"
+        },
+        {
+            "root_directory": "addons/astimpay/controllers/VerifyCsrfToken.php",
+            "update_directory": "app/Http/Middleware/VerifyCsrfToken.php"
+        },
+        {
+            "root_directory": "addons/astimpay/controllers/UddoktapayController.php",
+            "update_directory": "app/Http/Controllers/Payment/UddoktapayController.php"
+        },
+        {
+            "root_directory": "addons/astimpay/assets/astimpay_banner.png",
+            "update_directory": "public/addons/astimpay_banner.png"
+        },
+        {
+            "root_directory": "addons/astimpay/assets/astimpay.png",
+            "update_directory": "public/assets/img/cards/astimpay.png"
+        }
+    ]
+}
